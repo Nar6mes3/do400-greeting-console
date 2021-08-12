@@ -24,9 +24,10 @@ pipeline {
     stage('Release') {
       steps {
         sh '''
-                  oc project muwtnp-greetings
-                  oc start-build greeting-console  --follow --wait
-              '''
+            oc project muwtnp-greetings
+            oc apply -f build.yaml
+            oc start-build greeting-console  --follow --wait
+        '''
       }
     }
 
