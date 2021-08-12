@@ -14,6 +14,6 @@ spec:
   output:
     to:
       kind: DockerImage
-      name: quay.io/nmestres/share/greeting-console:latest
+      name: quay.io/nmestres/greeting-console:latest
     pushSecret:
       name: quay-credentials
