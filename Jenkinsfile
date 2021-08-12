@@ -25,7 +25,7 @@ pipeline {
       steps {
         sh '''
             oc project muwtnp-greetings
-            oc apply -f build.yaml
+            oc apply -f build.yml
             oc start-build greeting-console  --follow --wait
         '''
       }
